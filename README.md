@@ -5,7 +5,7 @@ November 13th, 2019
 Python Script to View Bikeshare Data
 
 ### Description
-This Script was completed as part of Udacity's Programming for Data Science with Python nanodegree program. At the user's desire, it filters massive amounts of data imported from csv files to view statistics of US bikeshare data from 3 cities: New York City, Chicago, and Washington.
+This Script was completed as part of Udacity's Programming for Data Science with Python nanodegree program. At the user's desire, it filters massive amounts of data imported from csv files to view statistics of US bikeshare data from 3 cities: New York City, Chicago, and Washington. The filters are by month and date, and the script also prompts the user asking if he/she would like to see 5 lines of raw data.
 
 ### Files used
 washington.csv
