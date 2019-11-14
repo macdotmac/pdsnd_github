@@ -1,15 +1,25 @@
 ### Date created
-Include the date you created this project and README file.
+November 13th, 2019
 
 ### Project Title
-Replace the Project Title
+Python Script to View Bikeshare Data
 
 ### Description
-Describe what your project is about and what it does
+This Script was completed as part of Udacity's Programming for Data Science with Python nanodegree program. At the user's desire, it filters massive amounts of data imported from csv files to view statistics of US bikeshare data from 3 cities: New York City, Chicago, and Washington.
 
 ### Files used
-Include the files used
+washington.csv
+new_york_city.csv
+chicago.csv
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+Referenced below are the sites used to become more familiar with extracting rows
+in pandas and finding the weekday name in time
 
+https://www.geeksforgeeks.org/python-extracting-rows-using-pandas-iloc/
+
+https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.mode.html
+
+https://pandas.pydata.org/pandas-docs/version/0.21/generated/pandas.DatetimeIndex.weekday_name.html
+
+https://docs.python.org/3/library/time.html
