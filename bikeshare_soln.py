@@ -126,7 +126,7 @@ def station_stats(df):
     )
 
     # TO DO: display most frequent combination of start station and end station trip
-    df['trips'] = df['Start Station']+ " " + df['End Station']
+    df['trips'] = df['Start Station']+ " to " + df['End Station']
     print("The most popular trip start to end is: {}".format(
         df['trips'].mode()[0])
     )
@@ -187,13 +187,13 @@ def user_stats(df, city):
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
 
-def show_five_rows(df):
-    """Displays raw data in increments of 5 rows on user command."""
+def show_ten_rows(df):
+    """Displays raw data in increments of 10 rows on user command."""
 
     #Declare prompt and parameters for iloc
     start_row = 0
-    end_row = 5
-    prompt = input("Do you want to see 5 rows of raw data? 'Yes' or 'No': ").lower()
+    end_row = 10
+    prompt = input("Do you want to see 10 rows of raw data? 'Yes' or 'No': ").lower()
 
     #while loop to validate input
     while prompt not in ['yes', 'no']:
@@ -202,10 +202,10 @@ def show_five_rows(df):
         #while loop through the last row of data to view increments of 5 rows
         while end_row <= df.shape[0]-1:
             print(df.iloc[start_row:end_row])
-            start_row += 5
-            end_row += 5
+            start_row += 10
+            end_row += 10
 
-            answer = input("Would you like to see 5 more rows? Type 'Yes' or 'No': ").lower()
+            answer = input("Would you like to see 10 more rows? Type 'Yes' or 'No': ").lower()
             #while loop to validate input
             while answer not in ['yes', 'no']:
                 answer = input("Invalid Input! Please type 'Yes' or 'No': ").lower()
@@ -225,7 +225,7 @@ def main():
         station_stats(df)
         trip_duration_stats(df)
         user_stats(df, city)
-        show_five_rows(df)
+        show_ten_rows(df)
 
         restart = input('\nWould you like to restart? Enter yes or no.\n')
         if restart.lower() != 'yes':
